@@ -36,17 +36,21 @@ Each assignment will have a few of the following categories of exercises:
 Please evaluate your system on the following questions:
 
 1. Explain the concept of object-oriented programming in simple terms to a complete beginner. 
-    - Aspect Tested:
+    - Aspect Tested: **Knowledge (we're asking for a specific factual statement)**
+    - AI Response: ![Screenshot by Dropbox Capture.png](..%2F..%2F..%2FLibrary%2FApplication%20Support%2FDropbox-Capture%2FThumbnails%2FScreenshot%20by%20Dropbox%20Capture.png)
 2. Read the following paragraph and provide a concise summary of the key points…
-    - Aspect Tested:
+    - Aspect Tested: **Summarization**
 3. Write a short, imaginative story (100–150 words) about a robot finding friendship in an unexpected place.
-    - Aspect Tested:
+    - Aspect Tested: **Generation/Creativity (asking new text to be created that doesn't exist in the world yet, per se)**
 4. If a store sells apples in packs of 4 and oranges in packs of 3, how many packs of each do I need to buy to get exactly 12 apples and 9 oranges?
-    - Aspect Tested:
+    - Aspect Tested: **Mathematical Reasoning**
 5. Rewrite the following paragraph in a professional, formal tone…
-    - Aspect Tested:
+    - Aspect Tested: **Writing Style. Ability to follow instructions.**
 
 This "vibe check" now serves as a baseline, of sorts, to help understand what holes your application has.
+
+###### 🏗️ Vibe Check Results:
+1. 
 
 ##### 🚧 Advanced Build:
 
@@ -63,3 +67,12 @@ In essence, it's a first look to ensure your system isn't experiencing catastrop
 ##### 🧑‍🤝‍🧑❓ Discussion Question #1:
 
 What are some limitations of vibe checking as an evaluation tool?
+
+##### 🧑‍🤝‍🧑❓ Discussion Answer #1:
+It's a very ad hoc way of testing a tool. Time-consuming and most likely inconsistent. Not particularly thorough at all.
+It's good for getting a rough sense that your system is doing what you want it to, but you probably want more systematic,
+automated ways of evaluating things when comparing between models, or even between iterations of your system (you might
+miss subtle degredations in the quality of your system).
+
+
+**tl;dr** quick and easy sanity check, but not comprehensive at all.
