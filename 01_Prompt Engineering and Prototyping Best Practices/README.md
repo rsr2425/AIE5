@@ -37,20 +37,26 @@ Please evaluate your system on the following questions:
 
 1. Explain the concept of object-oriented programming in simple terms to a complete beginner. 
     - Aspect Tested: **Knowledge (we're asking for a specific factual statement)**
-    - AI Response: ![Screenshot by Dropbox Capture.png](..%2F..%2F..%2FLibrary%2FApplication%20Support%2FDropbox-Capture%2FThumbnails%2FScreenshot%20by%20Dropbox%20Capture.png)
+    - AI Response: ![Basic Vibe Check 1.png](png/Basic Vibe Check 1.png)
+    - "Vibe Check": Not terrible. Nothing in it is particularly wrong, although style-wise I feel like the response is a little bit more verbose than I'd like.
 2. Read the following paragraph and provide a concise summary of the key points…
     - Aspect Tested: **Summarization**
+    - AI Response: ![Basic Vibe Check 2.png](png/Basic Vibe Check 2.png)
+    - "Vibe Check": It did pretty well! Generally, LLMs out of the box seem pretty good at taking a block of text and shortening it.
 3. Write a short, imaginative story (100–150 words) about a robot finding friendship in an unexpected place.
     - Aspect Tested: **Generation/Creativity (asking new text to be created that doesn't exist in the world yet, per se)**
+    - AI Response: ![Basic Vibe Check 3.png](png/Basic Vibe Check 3.png)
+    - "Vibe Check": Didn't respect the word count (which isn't too surprising considering LLMs work at the level of tokens rather than words).
 4. If a store sells apples in packs of 4 and oranges in packs of 3, how many packs of each do I need to buy to get exactly 12 apples and 9 oranges?
     - Aspect Tested: **Mathematical Reasoning**
+    - AI Response: ![Basic Vibe Check 4.png](png/Basic Vibe Check 4.png)
+    - "Vibe Check": It got the right answer, so that's good! I dislike though that it used several paragraphs to answer the question when you barely need one sentence. I've heard LLMs aren't terribly good at mathematical reasoning so I suppose it's still a good thing it was able to arrive at the right answer.
 5. Rewrite the following paragraph in a professional, formal tone…
     - Aspect Tested: **Writing Style. Ability to follow instructions.**
+    - AI Response: ![Basic Vibe Check 5.png](png/Basic Vibe Check 5.1.png) ![Basic Vibe Check 5.2.png](png/Basic Vibe Check 5.2.png)
+    - "Vibe Check": Had it generate another story, then asked it to write in a professional, formal tone. The result is okay? It did try to use more formal vocabulary. You could argue though that asking it to formalize a creative story is a weird, poorly defined problem though.
 
 This "vibe check" now serves as a baseline, of sorts, to help understand what holes your application has.
-
-###### 🏗️ Vibe Check Results:
-1. 
 
 ##### 🚧 Advanced Build:
 
