@@ -1,5 +1,6 @@
 import os
 from typing import List
+import PyPDF2
 
 
 class TextFileLoader:
@@ -60,6 +61,42 @@ class CharacterTextSplitter:
         for text in texts:
             chunks.extend(self.split(text))
         return chunks
+
+
+class PDFFileLoader:
+    """A class to load and parse PDF documents."""
+    
+    def __init__(self, path: str) -> None:
+        """Initialize the PDF loader with a file path.
+        
+        Args:
+            path (str): Path to the PDF file
+        """
+        self.path = path
+        self.documents: List[str] = []
+        
+    def load_documents(self) -> List[str]:
+        """Load the PDF file and extract text from all pages.
+        
+        Returns:
+            List[str]: List containing the extracted text
+        """
+        if not self.documents:  # Only load if not already loaded
+            self.load_file()
+        return self.documents
+    
+    def load_file(self) -> None:
+        """Read the PDF file and extract text from all pages."""
+        with open(self.path, 'rb') as file:
+            # Create PDF reader object
+            pdf_reader = PyPDF2.PdfReader(file)
+            
+            # Extract text from each page
+            text = ""
+            for page in pdf_reader.pages:
+                text += page.extract_text()
+            
+            self.documents.append(text)
 
 
 if __name__ == "__main__":
