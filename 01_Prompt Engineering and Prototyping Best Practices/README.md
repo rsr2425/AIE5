@@ -36,25 +36,15 @@ Each assignment will have a few of the following categories of exercises:
 Please evaluate your system on the following questions:
 
 1. Explain the concept of object-oriented programming in simple terms to a complete beginner. 
-    - Aspect Tested: **Knowledge (we're asking for a specific factual statement)**
-    - AI Response: ![Basic Vibe Check 1.png](png/Basic Vibe Check 1.png)
-    - "Vibe Check": Not terrible. Nothing in it is particularly wrong, although style-wise I feel like the response is a little bit more verbose than I'd like.
+    - Aspect Tested:
 2. Read the following paragraph and provide a concise summary of the key points…
-    - Aspect Tested: **Summarization**
-    - AI Response: ![Basic Vibe Check 2.png](png/Basic Vibe Check 2.png)
-    - "Vibe Check": It did pretty well! Generally, LLMs out of the box seem pretty good at taking a block of text and shortening it.
+    - Aspect Tested:
 3. Write a short, imaginative story (100–150 words) about a robot finding friendship in an unexpected place.
-    - Aspect Tested: **Generation/Creativity (asking new text to be created that doesn't exist in the world yet, per se)**
-    - AI Response: ![Basic Vibe Check 3.png](png/Basic Vibe Check 3.png)
-    - "Vibe Check": Didn't respect the word count (which isn't too surprising considering LLMs work at the level of tokens rather than words).
+    - Aspect Tested:
 4. If a store sells apples in packs of 4 and oranges in packs of 3, how many packs of each do I need to buy to get exactly 12 apples and 9 oranges?
-    - Aspect Tested: **Mathematical Reasoning**
-    - AI Response: ![Basic Vibe Check 4.png](png/Basic Vibe Check 4.png)
-    - "Vibe Check": It got the right answer, so that's good! I dislike though that it used several paragraphs to answer the question when you barely need one sentence. I've heard LLMs aren't terribly good at mathematical reasoning so I suppose it's still a good thing it was able to arrive at the right answer.
+    - Aspect Tested:
 5. Rewrite the following paragraph in a professional, formal tone…
-    - Aspect Tested: **Writing Style. Ability to follow instructions.**
-    - AI Response: ![Basic Vibe Check 5.png](png/Basic Vibe Check 5.1.png) ![Basic Vibe Check 5.2.png](png/Basic Vibe Check 5.2.png)
-    - "Vibe Check": Had it generate another story, then asked it to write in a professional, formal tone. The result is okay? It did try to use more formal vocabulary. You could argue though that asking it to formalize a creative story is a weird, poorly defined problem though.
+    - Aspect Tested:
 
 This "vibe check" now serves as a baseline, of sorts, to help understand what holes your application has.
 
@@ -73,12 +63,3 @@ In essence, it's a first look to ensure your system isn't experiencing catastrop
 ##### 🧑‍🤝‍🧑❓ Discussion Question #1:
 
 What are some limitations of vibe checking as an evaluation tool?
-
-##### 🧑‍🤝‍🧑❓ Discussion Answer #1:
-It's a very ad hoc way of testing a tool. Time-consuming and most likely inconsistent. Not particularly thorough at all.
-It's good for getting a rough sense that your system is doing what you want it to, but you probably want more systematic,
-automated ways of evaluating things when comparing between models, or even between iterations of your system (you might
-miss subtle degredations in the quality of your system).
-
-
-**tl;dr** quick and easy sanity check, but not comprehensive at all.
